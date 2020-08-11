@@ -39,7 +39,7 @@ def calculate ():
         x1vijet.place(x=100, y=100)
 
 window = tkinter.Tk()
-window.geometry("300x200")
+window.geometry("320x200")
 window.title("окно")
 
 menu = tkinter.Menu(window)
