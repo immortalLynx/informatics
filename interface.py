@@ -12,11 +12,10 @@ def calculate():
     diskrvijet = tkinter.Label(window, text="Дискриминант равен " + str(diskr), fg="red")
     diskrvijet.place(x=100, y=70)
 
-    korenIzDisc = int(diskr ** 0.5)
     znamenatel = 2 * a
 
-    korneynet = tkinter.Label(window, text="корней нет")
     if diskr > 0:
+        korenIzDisc = int(diskr ** 0.5)
         x1 = int(korenIzDisc - b)
         x1 = x1 / znamenatel
         x2 = (-1 * korenIzDisc - b)
@@ -28,11 +27,11 @@ def calculate():
         x2vijet.place(x=100, y=130)
 
     elif diskr < 0:
+        korneynet = tkinter.Label(window, text="корней нет")
         korneynet.place(x=100, y=100)
     else:
 
-        x1 = (korenIzDisc - b)
-        x1 = x1 / znamenatel
+        x1 = -b / znamenatel
         x1vijet = tkinter.Label(window, text="x1 = " + str(x1))
         x1vijet.place(x=100, y=100)
 
