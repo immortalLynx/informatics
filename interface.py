@@ -13,12 +13,11 @@ def calculate():
     diskrvijet.place(x=100, y=70)
 
     korenIzDisc = int(diskr ** 0.5)
-    znamenatel = 0
+    znamenatel = 2 * a
 
     korneynet = tkinter.Label(window, text="корней нет")
     if diskr > 0:
         x1 = int(korenIzDisc - b)
-        znamenatel = 2 * a
         x1 = x1 / znamenatel
         x2 = (-1 * korenIzDisc - b)
         x2 = x2 / znamenatel
